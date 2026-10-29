@@ -1,20 +1,21 @@
 """Resume -> job matching pipeline (ported from notebooks 02 and 03)."""
+import gzip
 import io
 import json
+import os
 import re
 import unicodedata
 from pathlib import Path
 
 import numpy as np
-import pandas as pd
-from pypdf import PdfReader
-import os
 from fastembed import TextEmbedding
+from pypdf import PdfReader
 
 from llm import llm, LLMLimitError
 
 DATA = Path(__file__).parent / "data"
-jobs = pd.read_parquet(DATA / "jobs.parquet")
+with gzip.open(DATA / "jobs.json.gz", "rt", encoding="utf-8") as f:
+    jobs = json.load(f)   # list of dicts: title, company, location, level, desc (first 250 words)
 job_emb = np.load(DATA / "jobs_emb.npy")
 
 # ONNX Runtime instead of PyTorch: same model, a fraction of the memory (verified against the PyTorch embeddings)
@@ -24,9 +25,6 @@ MODEL = "openai/gpt-oss-20b"
 
 
 # ---------- Helpers ----------
-def _s(x):
-    return None if pd.isna(x) else str(x)
-
 def parse_json(text):
     text = text.strip().removeprefix("```json").removeprefix("```").removesuffix("```").strip()
     return json.loads(text)
@@ -89,8 +87,8 @@ LEVEL_OK = {
     "executive": {"Mid-Senior level", "Director", "Executive"},
 }
 LAMBDA = 0.028  # median rank10->rank50 score gap on the eval set (notebook 02)
-_levels = jobs["formatted_experience_level"]
-_job_bad = {s: (_levels.notna() & ~_levels.isin(ok)).to_numpy() for s, ok in LEVEL_OK.items()}
+_job_bad = {s: np.array([j["level"] is not None and j["level"] not in ok for j in jobs])
+            for s, ok in LEVEL_OK.items()}
 
 def retrieve(resume_text, profile, k=20):
     q = np.array(list(embedder.embed([resume_text, profile_to_text(profile)])), dtype=np.float32)
@@ -105,8 +103,7 @@ def retrieve(resume_text, profile, k=20):
 
 # ---------- 4. LLM ranking (prompt identical to the evaluated one) ----------
 def snippet(j, max_words):
-    row = jobs.iloc[j]
-    return f"{row['title']}: {' '.join(str(row['description_clean']).split()[:max_words])}"
+    return f"{jobs[j]['title']}: {' '.join(jobs[j]['desc'].split()[:max_words])}"
 
 RANK_SYSTEM = "You are a career advisor matching a candidate to job postings. Respond with JSON only, no other text."
 RANK_PROMPT = """Candidate profile:
@@ -223,10 +220,10 @@ def match(data: bytes, filename: str) -> dict:
     details = explain(profile, top10[:5])
     matches = []
     for r, j in enumerate(top10, 1):
-        row = jobs.iloc[j]
-        m = {"rank": r, "title": _s(row["title"]), "company": _s(row["company_name"]),
-             "location": _s(row["location"]), "level": _s(row["formatted_experience_level"]),
-             "snippet": " ".join(str(row["description_clean"]).split()[:60]),
+        job = jobs[j]
+        m = {"rank": r, "title": job["title"], "company": job["company"],
+             "location": job["location"], "level": job["level"],
+             "snippet": " ".join(job["desc"].split()[:60]),
              "why": None, "missing": []}
         if j in details:
             m.update(details[j])
