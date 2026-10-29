@@ -1,0 +1,610 @@
+[
+ {
+  "label": "Accountant",
+  "result": {
+   "profile": {
+    "title": "Accountant",
+    "seniority": "senior",
+    "skills": [
+     "Governmental accounting",
+     "Financial statement preparation",
+     "General ledger management",
+     "Budget preparation & forecasting",
+     "Bank reconciliations",
+     "Accounts payable & receivable",
+     "Payroll processing",
+     "Fixed assets management",
+     "Tax return filing",
+     "Audit procedures",
+     "GAAP compliance",
+     "Microsoft Word",
+     "Microsoft Excel",
+     "Microsoft Access",
+     "Microsoft PowerPoint"
+    ],
+    "domains": [
+     "Government",
+     "Healthcare",
+     "Tax & Accounting Services"
+    ],
+    "summary": "A seasoned accounting professional with over 15 years of experience in government, healthcare, and tax/accounting services. Skilled in financial reporting, budgeting, and audit support, this candidate is well-suited for senior accounting roles that require expertise in public sector accounting, hospital finance, or complex tax preparation."
+   },
+   "matches": [
+    {
+     "rank": 1,
+     "title": "Senior Accountant",
+     "company": "Bentley University",
+     "location": "Waltham, MA",
+     "level": "Mid-Senior level",
+     "snippet": "Job Description SummaryThe Senior Accountant will assist the Assistant Controller and Controller in grant coordination and post-award accounting, tax return and compliances, and managing the daily operations of the general accounting functions of the University. The position works closely with the University’s department administrators as well as the Office of Sponsored Programs, Accounts Payable and Payroll staff to ensure financial",
+     "why": "You have extensive experience in financial reporting, budgeting, audit support, and tax return filing, which aligns with the senior accounting and tax responsibilities of the role.",
+     "missing": [
+      "grant post-award accounting experience",
+      "knowledge of Form 990 and 990T tax returns",
+      "experience with federal grant reporting"
+     ]
+    },
+    {
+     "rank": 2,
+     "title": "Senior Accountant",
+     "company": "Vaco",
+     "location": "Raleigh, NC",
+     "level": "Mid-Senior level",
+     "snippet": "Senior Accountant The Senior Accountant will play a pivotal role in ensuring the accuracy and integrity of financial reporting. The Senior Accountant will be responsible for various accounting functions, including but not limited to: Accounts Payable:Overseeing the AP processes including processing invoices, reconciling AP to the GL, vendor management, expense report management, and 1099 management.Financial Reporting:Prepare monthly, quarterly, and annual",
+     "why": "You possess strong GAAP knowledge, tax compliance experience, and advanced Excel skills needed for the role.",
+     "missing": [
+      "CPA certification",
+      "experience with renewable energy tax regulations"
+     ]
+    },
+    {
+     "rank": 3,
+     "title": "Senior Accountant",
+     "company": "Greco and Sons, Inc.",
+     "location": "Bartlett, IL",
+     "level": null,
+     "snippet": "Job Summary:The senior accountant reports to the controller and is responsible for overseeing the general ledger and accounting related activities for assigned Greco entities and accounts. They ensure timely completion of close related activities, manage risk based on exception reporting, control reconciliation of accounts and records, and may include administrative/transactional accounting support work, such as ledger maintenance and data entry.in",
+     "why": "Your 15 years of senior accounting experience and proficiency in general ledger and financial analysis match the core duties.",
+     "missing": [
+      "CPA, CMA, or MBA credential",
+      "experience in a publicly traded company or public accounting firm"
+     ]
+    },
+    {
+     "rank": 4,
+     "title": "Senior Accountant",
+     "company": "Wilks Development",
+     "location": "Fort Worth, TX",
+     "level": null,
+     "snippet": "Position Summary: The Senior Accountant will report to the Controller. This role will be responsible for the daily and monthly reporting for multiple entities. Key Roles / Responsibilities: Analyze and maintain the general ledger to ensure the accuracy of coding and costs.Reconciliation of intercompany accounts as well as investments in subsidiariesPreparation of month-end entries, including payroll, interest, expense, and revenue",
+     "why": "You have strong general ledger management, fixed asset maintenance, and budgeting skills suitable for the position.",
+     "missing": [
+      "experience in building supply distribution or commercial real estate"
+     ]
+    },
+    {
+     "rank": 5,
+     "title": "Senior Accountant",
+     "company": "Atlas Search",
+     "location": "New York, NY",
+     "level": "Mid-Senior level",
+     "snippet": "Job Title: Accounting SupervisorJob Description:The Accounting Supervisor plays a vital role within the accounting team, contributing significantly to the reporting of financial statements. This individual is responsible for preparing financial reports, conducting account reconciliations, managing the general ledger, assisting with audit requests, and fulfilling other accounting duties as assigned. They must possess strong analytical skills, be proactive problem solvers, and",
+     "why": "You have significant experience in audit support and financial reporting, which aligns with the supervisory and reporting aspects of the role.",
+     "missing": [
+      "CPA certification",
+      "Big 4 or national firm public accounting experience",
+      "experience in a consumer products or e-commerce company"
+     ]
+    },
+    {
+     "rank": 6,
+     "title": "Senior Accountant",
+     "company": "Cordia Resources by Cherry Bekaert",
+     "location": "Tysons Corner, VA",
+     "level": "Mid-Senior level",
+     "snippet": "Senior AccountantOur client is a $2B Tech company located in Northern VA, is looking to add a Senior Accountant to their growing Accounting Dept. This person will be exposed to many different layers of the business, including financial reporting, assisting in the audit and general month end responsibilities. Great benefits including 20 days of PTO and 401k match. This position",
+     "why": null,
+     "missing": []
+    },
+    {
+     "rank": 7,
+     "title": "Senior Accountant",
+     "company": "Ascendo Resources",
+     "location": "Coral Gables, FL",
+     "level": "Associate",
+     "snippet": "Unleash Your Potential in a Thriving Career! Dive into an extraordinary opportunity that promises not just a job, but a vibrant career path! We are on the hunt for a Senior Accountant who is eager to ascend in their professional journey with an organization on an upward trajectory. Seize this chance to work in a fast-paced, dynamic environment where your",
+     "why": null,
+     "missing": []
+    },
+    {
+     "rank": 8,
+     "title": "Senior Accountant",
+     "company": "Pave Talent",
+     "location": "Fenwick, WV",
+     "level": "Associate",
+     "snippet": "Position Overview: We are seeking a diligent Senior Accountant to join our finance team. This role is pivotal in supporting our financial management through inventory control, financial reporting, and operational cost analysis. The ideal candidate will be a detail-oriented individual with a knack for numbers and a passion for improving financial processes. Key Responsibilities: Facilitate monthly financial closing by preparing",
+     "why": null,
+     "missing": []
+    },
+    {
+     "rank": 9,
+     "title": "Senior Accountant",
+     "company": "Creative Financial Staffing (CFS)",
+     "location": "Bakersfield, CA",
+     "level": "Mid-Senior level",
+     "snippet": "About The Company And Opportunity Our client is an agriculture organization with over 40 years in the businessWork alongside tenured leadership team Lots of opportunities for advancement into Senior and/or Management roles Employees participate in community outreach and active volunteer programsThey offer excellent benefits, including generous 401K, team member discounts, and low-cost health insurance Overview Of The Senior Accountant Role",
+     "why": null,
+     "missing": []
+    },
+    {
+     "rank": 10,
+     "title": "Senior Accountant",
+     "company": "Frederick Fox",
+     "location": "Scottsdale, AZ",
+     "level": "Mid-Senior level",
+     "snippet": "Our Client, a preeminent real estate developer in the Western United States, with key focus on acquisitions, development, leasing, finance, management, construction and consulting, is looking for a Senior Accountant to join their team. Job Responsibilities:To be an integral team member in financial reporting, account reconciliations, financial systems, fixed asset capitalization processes, intercompany entries and balancing, and operational support. Participating",
+     "why": null,
+     "missing": []
+    }
+   ]
+  }
+ },
+ {
+  "label": "Information Technology Specialist",
+  "result": {
+   "profile": {
+    "title": "Information Technology Specialist",
+    "seniority": "mid",
+    "skills": [
+     "Cisco Switching",
+     "Cisco Routers",
+     "Network Administration",
+     "Hardware Troubleshooting",
+     "Software Updates",
+     "Security Protocols",
+     "Help Desk Support",
+     "User Account Management",
+     "System Testing",
+     "Automation Scripting",
+     "Backup and Recovery",
+     "Server Infrastructure",
+     "Device Configuration",
+     "Technical Support",
+     "Training Manual Creation"
+    ],
+    "domains": [
+     "Information Technology",
+     "Computer Repair",
+     "Correctional Services"
+    ],
+    "summary": "Versatile IT professional with mid-level experience in network administration, hardware maintenance, and user support across corporate and correctional environments. Skilled in configuring systems, troubleshooting issues, and implementing security protocols, making them suitable for roles that blend technical support, infrastructure management, and process improvement."
+   },
+   "matches": [
+    {
+     "rank": 1,
+     "title": "Senior Help Desk",
+     "company": "LHH",
+     "location": "Bloomington, MN",
+     "level": "Mid-Senior level",
+     "snippet": "Role Summary: The Technical Support Specialist is responsible for company-wide technology support and operational activities encompassing applications, infrastructure, communications, and security. They will support multiple subsidiary organizations located throughout North America. Essential Duties and Responsibilities: Interact daily by phone, email, web, and face-to-face with business users and stakeholders to respond to user requests, understand business needs, troubleshoot and resolve user",
+     "why": "You have help desk support experience, user account and security protocol management, and network troubleshooting skills that align with the role’s need for desktop, application, and infrastructure support, as well as remote support tools.",
+     "missing": [
+      "4+ years’ experience in a similar IT or support role",
+      "Experience supporting a 24×7 environment",
+      "Experience supporting Microsoft Dynamics NAV or similar ERP systems"
+     ]
+    },
+    {
+     "rank": 2,
+     "title": "Information Technology Help Desk",
+     "company": "Nexien Inc.",
+     "location": "Huntington Beach, CA",
+     "level": "Associate",
+     "snippet": "Responsibilities: • Install and configure PC’s and Mac’s, printers and peripherals within established standards and guidelines• Install new hardware and software upgrades requested from users• Analyze and solve technical problems by using problem-solving skills• Conduct analysis and troubleshooting via telephone, email and using remote assistance• Resolve technical problems with computing equipment and software• Assist visitors and VIPs with the ongoing",
+     "why": "You are skilled at installing and configuring hardware and software, troubleshooting issues via remote assistance, and you have experience with Windows operating systems, which matches the job’s focus on PC/Mac setup and technical support.",
+     "missing": [
+      "3+ years of related experience",
+      "Project Management fundamentals"
+     ]
+    },
+    {
+     "rank": 3,
+     "title": "Enterprise Support IT Technician II",
+     "company": "ICE",
+     "location": "Jacksonville, FL",
+     "level": "Associate",
+     "snippet": "LOCATIONThis role is on-site in our Jacksonville, FL office, Mon-Fri. SUMMARYSupports the daily operations of desktop software and hardware by providing assistance through phone and email requests in resolving technology support issues. Configures and installs new technology while also providing maintenance by repairing, upgrading, and backing up existing technology. RESPONSIBILITIESProviding expert-level hardware, software, network, and server support for Windows and",
+     "why": "You bring hardware and software support experience, network administration, backup/recovery, and user account management, which are core to the position’s desktop and server support responsibilities.",
+     "missing": [
+      "Azure Active Directory experience",
+      "Intune management experience",
+      "Exchange Online provisioning and management"
+     ]
+    },
+    {
+     "rank": 4,
+     "title": "Desktop Support Specialist",
+     "company": "Trinity Technology Solutions LLC",
+     "location": "McLean, VA",
+     "level": "Mid-Senior level",
+     "snippet": "Here’s What You’ll Do: Provide exceptional customer service at the walkup service desk to resolve incidentsimmediately and expedite fulfillment of requests. Provide remote support over the phone using remote desktop tools. Assist employees with installation, configuration, and troubleshooting of computer hardware– laptops, desktops, peripherals, printers, mobile devices. Ability to triage tickets and troubleshoot independently. Install and support desktop software for",
+     "why": "Your experience with help desk support, user account management, and troubleshooting Windows and Mac hardware fits the customer-facing and remote support aspects of the role.",
+     "missing": [
+      "Azure Active Directory experience",
+      "Exchange Online experience",
+      "SharePoint/Teams support"
+     ]
+    },
+    {
+     "rank": 5,
+     "title": "Deskside Support Technician",
+     "company": "KTek Resourcing",
+     "location": "Lincolnshire, IL",
+     "level": "Mid-Senior level",
+     "snippet": "Position SummaryDrive high level of customer service and satisfactionManage incident and service request queues to ensure SLA’s are metProvide resolution on software and hardware incidentsWork with offshore capabilities to deliver efficient and effective customer serviceReview and take part in problem management activitiesFulfill service requests for varied IT equipmentDrive compliance to internal and external processes and standardsInitiate service improvements to the",
+     "why": "You have hardware troubleshooting, software support, and experience creating training materials, aligning with the basic technical support and documentation duties of the role.",
+     "missing": [
+      "Mac OS X troubleshooting experience",
+      "Server OS and server hardware support experience",
+      "Experience with backup and restore from on-premise and cloud utilities"
+     ]
+    },
+    {
+     "rank": 6,
+     "title": "Support Desk Specialist Tier 1 and Tier 2 (multiple openings)",
+     "company": "Vaco",
+     "location": "San Diego, CA",
+     "level": "Entry level",
+     "snippet": "Support Desk Specialist Tier 1 and Tier 2 (multiple openings) - No C2C inquiries please! Job Summary We are seeking a Support Desk Specialist to join our dynamic team. This role is ideal for those who thrive in a fast-paced environment, excel in multitasking, and are passionate about providing top-notch support to our clients. As a Support Desk Specialist, you",
+     "why": null,
+     "missing": []
+    },
+    {
+     "rank": 7,
+     "title": "Network Engineer",
+     "company": "The Select Group",
+     "location": "North Carolina, United States",
+     "level": "Mid-Senior level",
+     "snippet": "The ideal candidate will be responsible for troubleshooting our current network configuration and infrastructure in a 100% remote setting. You will design our revamped network infrastructure with the goal of maximizing our network performance. You will also provide troubleshooting and configuration support by using your strong technical skills in Linux and Windows environments and IP networking. Responsibilities100% troubleshooting role, supporting",
+     "why": null,
+     "missing": []
+    },
+    {
+     "rank": 8,
+     "title": "Data Center Technician, Global Server Operations",
+     "company": "Google",
+     "location": "New Albany, OH",
+     "level": null,
+     "snippet": "Minimum qualifications: Experience in maintenance, monitoring of server systems, operating systems, or networking protocols.Experience in Hardware, Networking Equipment, Operating Systems, and Data Center Operations.Ability to travel and work non-standard hours (including weekends, holidays, alternate work hours, and change shifts). Preferred qualifications: Experience working with and troubleshooting hardware/network related issues using Linux based tools. Ability to balance competing priorities and manage",
+     "why": null,
+     "missing": []
+    },
+    {
+     "rank": 9,
+     "title": "MAC Specialist",
+     "company": "AppLab Systems, Inc",
+     "location": "Santa Clara, CA",
+     "level": "Associate",
+     "snippet": "Title : L2 MAC SupportLocation : Santa Clara ,CA onsiteContract Handle tiered tickets and escalations, providing on-site and remote assistance for Windows, Mac, Linux, iOS, and Android platforms as needed.IT Inventory: Responsible for procuring, managing, and tracking IT assets, including inventory and consumables, while contributing to demand planning strategies.Compliance and Vendor Engagement: Collaborate with engineering for audit compliance, ensuring adherence",
+     "why": null,
+     "missing": []
+    },
+    {
+     "rank": 10,
+     "title": "Technical Support Specialist",
+     "company": "Take2 Consulting, LLC",
+     "location": "Madison, WI",
+     "level": "Entry level",
+     "snippet": "As an onsite Tech Support Admin on this project, you will be supporting the Department of Veterans’ Affairs. You will analyze problem areas and opportunities for improvement in this mission critical network. This position is located onsite at the Veterans&#39; Administration facilities including Medical Centers with daytime hours and potential for weekend hours. Location: 2500 Overlook Terrace Madison, WI 53705Work",
+     "why": null,
+     "missing": []
+    }
+   ]
+  }
+ },
+ {
+  "label": "Private Chef",
+  "result": {
+   "profile": {
+    "title": "Private Chef",
+    "seniority": "mid",
+    "skills": [
+     "Certified Nursing Assistant (CNA)",
+     "Gerontological Nursing Assistant (GNA)",
+     "Patient charting",
+     "Mobility assistance",
+     "Catheter insertion and care",
+     "Medical terminology",
+     "Culinary arts",
+     "Menu planning",
+     "Food preparation",
+     "Grooming and bathing assistance",
+     "Housekeeping",
+     "Nutrition support",
+     "Vital sign monitoring",
+     "Patient transportation",
+     "Clinical documentation"
+    ],
+    "domains": [
+     "Healthcare",
+     "Hospitality",
+     "Culinary"
+    ],
+    "summary": "The candidate blends nursing and culinary expertise, making them suited for roles that combine patient care with meal preparation such as inpatient dietitian support or skilled nursing facility kitchen management. Their strong clinical background and cooking skills position them well for healthcare environments requiring nutritional services and patient assistance."
+   },
+   "matches": [
+    {
+     "rank": 1,
+     "title": "Full-Time Resource Chef",
+     "company": "Cura Hospitality",
+     "location": "Pittsburgh, PA",
+     "level": "Mid-Senior level",
+     "snippet": "Full-Time Resource Chef Job Reference Number: 18625 Employment Type: Full-Time, OnsiteSegment: Healthcare Brand: Cura-Hospitality State: Pennsylvania (US-PA) Why work for Cura Hospitality? Come join our amazing team and enjoy: No late Night Shifts!Weekly Pay!Free meals!Work/Life Balance!Competitive Benefits Package!Tuition Reimbursement!Employee Referral Bonus!401K & Company Match! Elior North America is a family of distinct hospitality companies with more than 50 years of",
+     "why": "You have culinary expertise and experience with menu planning and food preparation, which aligns with the role’s focus on supervising and participating in meal preparation.",
+     "missing": [
+      "Experience traveling between multiple hospital locations",
+      "Reliable personal transportation for commuting",
+      "Experience supervising culinary operations"
+     ]
+    },
+    {
+     "rank": 2,
+     "title": "Host",
+     "company": "Trinity Health",
+     "location": "Mishawaka, IN",
+     "level": "Mid-Senior level",
+     "snippet": "Employment Type: Full time Shift: Rotating Shift Description: Come join the Food & Nutrition team at Saint Mary’s Hospital, part of Trinity Health Of New England! We are a member of the nationwide Trinity Health family, bringing compassionate care to our communities. Position Purpose: This person is responsible the transport, delivery, and retrieval of food trays to and from patients.",
+     "why": "You possess patient care skills and nutritional support experience, matching the need for providing food and nutrition care to patients.",
+     "missing": [
+      "Direct experience with tray assembly and delivery",
+      "Specific knowledge of food transportation logistics"
+     ]
+    },
+    {
+     "rank": 3,
+     "title": "Host",
+     "company": "Trinity Health Of New England",
+     "location": "Waterbury, CT",
+     "level": "Mid-Senior level",
+     "snippet": "Employment Type Full time Shift Rotating Shift Description Come join the Food & Nutrition team at Saint Mary’s Hospital, part of Trinity Health Of New England! We are a member of the nationwide Trinity Health family, bringing compassionate care to our communities. Position Purpose This person is responsible the transport, delivery, and retrieval of food trays to and from patients.",
+     "why": "You have patient care and nutritional support skills that match the requirement to provide food and nutrition care services to patients.",
+     "missing": [
+      "Direct experience with tray assembly and delivery",
+      "Specific knowledge of food transportation logistics"
+     ]
+    },
+    {
+     "rank": 4,
+     "title": "Resident Chef",
+     "company": "Sur La Table",
+     "location": "Jacksonville, FL",
+     "level": "Mid-Senior level",
+     "snippet": "The Resident Chef contributes to the success of a Sur La Table store by inspiring customers on all points of their culinary journey. The Resident Chef blends culinary talent, business acumen and teaching skills to drive business results while building a high-performing team. This role uses discretion in assigning duties to employees, in employment decisions and is accountable for the",
+     "why": "You have culinary arts and menu planning skills that align with managing kitchen operations.",
+     "missing": [
+      "Experience managing kitchen operations and staffing",
+      "Experience training and coaching culinary staff",
+      "Business acumen related to restaurant operations"
+     ]
+    },
+    {
+     "rank": 5,
+     "title": "Sous Chef",
+     "company": "Earls Kitchen + Bar",
+     "location": "Denver, CO",
+     "level": "Entry level",
+     "snippet": "We are looking for a passionate and experienced Sous Chef to inspire, lead and mentor our kitchen team. Our ideal candidate has a commitment to excellence and a desire to learn and grow. As the Sous Chef, you will:Oversee day-to-day kitchen operations. Ensure flawless kitchen operations through training, mentoring, assisting, and supporting kitchen staff members.Uphold Earls standards through exceptional food",
+     "why": "You have two years of culinary experience and menu planning skills relevant to a sous chef position.",
+     "missing": [
+      "One year of management or supervisory experience",
+      "Formal leadership or mentorship experience",
+      "Relevant food safety certification"
+     ]
+    },
+    {
+     "rank": 6,
+     "title": "Specialty Chef (Chef de Cuisine)- Main Kitchen- Harrah's Resort SoCal",
+     "company": "Harrah's Resort Southern California",
+     "location": "Valley Center, CA",
+     "level": null,
+     "snippet": "JOIN A TEAM THAT GOES ALL-IN ON YOU Are you ready to join a team that embraces a Funner culture, blazes the trail, and commits to delivering Family-Style Service at every turn? Do you want to embark on an extraordinary adventure that combines learning with fun? At Harrah’s Resort Southern California, we want you to become an integral part of",
+     "why": null,
+     "missing": []
+    },
+    {
+     "rank": 7,
+     "title": "Private Chef to UHNW Family",
+     "company": "Pocketbook Agency",
+     "location": "Miami, FL",
+     "level": "Mid-Senior level",
+     "snippet": "We are currently seeking a talented private Chef for a lovely UHNW family based in the Miami Beach area. This is an excellent role with a special family that is looking for someone to join the team and stay for years to come. The ideal candidate for this role will have prior private chef experience, preferably with UHNW families. The",
+     "why": null,
+     "missing": []
+    },
+    {
+     "rank": 8,
+     "title": "Sous Chef",
+     "company": "DO & CO AG",
+     "location": "Queens, NY",
+     "level": "Mid-Senior level",
+     "snippet": "We have an incredible opportunity for a dynamic, inspirational culinary leader to join our New York Kitchen as a Sous Chef! Who We Are: We have a passion for hospitality culinary delights on every banquet floor and in the sky. With the three business segments of Airline Catering, International Event Catering, and Restaurants, Lounges & Hotels, DO & CO offers",
+     "why": null,
+     "missing": []
+    },
+    {
+     "rank": 9,
+     "title": "Food Service - Sous Chef",
+     "company": "SSA Group",
+     "location": "Powell, OH",
+     "level": "Mid-Senior level",
+     "snippet": "Sous Chef Who are we : SSA Group works with zoos, aquariums, museums, and other cultural attractions on integrating dining, retail, admissions and more. Position Title: Sous Chef Reports to: Executive Chef Responsibilities Perform the steps of SSA EXTRA Guest Service to ensure a memorable experience for every guest and client. Create Competitive quality products. Supervise and participate in creating",
+     "why": null,
+     "missing": []
+    },
+    {
+     "rank": 10,
+     "title": "Corporate Chef",
+     "company": "STARR Restaurants",
+     "location": "New York, NY",
+     "level": null,
+     "snippet": "Position Overview: With a passion for innovation and a dedication to culinary excellence, we're seeking a talented Chef who will be responsible for overseeing culinary operations across our restaurant group. You will work closely with our executive team to develop and execute menus, maintain high standards of food quality and consistency, and ensure the profitability of our culinary operations. Additionally,",
+     "why": null,
+     "missing": []
+    }
+   ]
+  }
+ },
+ {
+  "label": "Engineering Intern",
+  "result": {
+   "profile": {
+    "title": "Engineering Intern",
+    "seniority": "entry",
+    "skills": [
+     "C++",
+     "Python",
+     "AutoCAD",
+     "AutoCAD Inventor",
+     "3Ds Max",
+     "Autodesk Showcase",
+     "BIM",
+     "Ethernet",
+     "Pneumatic controls",
+     "VAV",
+     "Intelligent Room Sensors",
+     "Server configuration",
+     "Linux",
+     "Xcode",
+     "Visual Basic"
+    ],
+    "domains": [
+     "Engineering",
+     "Construction",
+     "Food Service"
+    ],
+    "summary": "A Computer Science junior with hands-on experience designing and implementing mechanical and electrical controls in AutoCAD and Inventor, as well as BIM for construction projects. The candidate is well-suited for entry-level engineering roles that require CAD design, control systems, and field installation, with a strong foundation in programming and server administration."
+   },
+   "matches": [
+    {
+     "rank": 1,
+     "title": "Mechanical Engineer Intern - Continuation",
+     "company": "Nilfisk",
+     "location": "Brooklyn Park, MN",
+     "level": null,
+     "snippet": "MAJOR FUNCTION Under direction of an engineer, the intern applies basic principles & techniques of mechanical engineering & analysis in areas such as: designing components in CAD, testing in the R&D lab, failure analysis, technical tasks in support of other engineers, & focused technical design improvement projects. Essential Duties And Responsibilities Usage of CAD software for modeling & drawing creationAssist",
+     "why": "You have hands-on CAD experience with AutoCAD and Inventor, and you’re familiar with mechanical controls and testing environments.",
+     "missing": [
+      "Experience with Creo",
+      "Experience in defining and executing test plans",
+      "Background in failure and root-cause analysis"
+     ]
+    },
+    {
+     "rank": 2,
+     "title": "CAD & Design Intern - Melbourne, FL",
+     "company": "Bowman Consulting",
+     "location": "Melbourne, FL",
+     "level": "Internship",
+     "snippet": "Purpose Introduction to drafting and design support during the planning, design, and construction of civil engineering projects. Key Responsibilities Leadership and Direction Perform work under direct supervision of an experienced professional and follow established procedures and clearly defined processes. At The Operational And Company Level Interact with multiple departments and peers within the organization and participate in intern program learning",
+     "why": "You possess drafting skills in AutoCAD and have experience preparing construction documents for mechanical systems.",
+     "missing": [
+      "Specific civil engineering drafting experience",
+      "Familiarity with construction document standards and procedures"
+     ]
+    },
+    {
+     "rank": 3,
+     "title": "CAD Drafting Intern - Ann Arbor",
+     "company": "Black & Veatch",
+     "location": "Ann Arbor, MI",
+     "level": "Internship",
+     "snippet": "Company : Black & Veatch Corporation Req Id : 103267 Opportunity Type : College Intern Relocation eligible : No Full time/Part time : Full-Time Project Only Hire : No Visa Sponsorship Available: No The Opportunity As a CAD Drafter Intern, you will work with the Virtual Design & Data Solutions Team and serve as a resource for an assigned function:",
+     "why": "You are currently enrolled in a Computer Science program and have strong CAD skills in AutoCAD and BIM, aligning with the technical nature of the role.",
+     "missing": [
+      "Enrollment in an Engineering Technology program",
+      "Experience with MicroStation",
+      "Experience with Revit"
+     ]
+    },
+    {
+     "rank": 4,
+     "title": "3D Modeler / Designer",
+     "company": "EnergySolutions",
+     "location": "Charlotte, NC",
+     "level": "Entry level",
+     "snippet": "Job Summary And Responsibilities The preferred candidate should have a solid career background working with and on the AUTOCAD and/or SOLIDWORKS modelling platforms and demonstrate the ability to work in a professional team environment. Upon selection, the candidate will support various ongoing projects to gain familiarization with the ES programs and processes. Longer term, the individual will help the organization",
+     "why": "You have solid experience creating 3D models in AutoCAD and Inventor and a background in BIM integration.",
+     "missing": [
+      "Five years of active 3-D modeling experience",
+      "Proficiency in SOLIDWORKS",
+      "Multi-disciplinary modelling experience"
+     ]
+    },
+    {
+     "rank": 5,
+     "title": "Electrical CAD Designer",
+     "company": "Allure Staffing and Recruitment",
+     "location": "Eden Prairie, MN",
+     "level": null,
+     "snippet": "Job DescriptionJob Overview:We are seeking a talented CAD Designer to join our team. As a CAD Designer, you will be responsible for creating detailed schematics, assembling drawings, and utilizing various software programs to design and develop innovative solutions. This is an exciting opportunity to contribute to the creation of cutting-edge products and systems.Responsibilities:- Create detailed 2D and 3D models using",
+     "why": "You are proficient in Inventor, a key CAD tool for the position, and have a foundation in programming and server administration.",
+     "missing": [
+      "Five years of CAD design experience",
+      "Proficiency in SOLIDWORKS",
+      "Experience with Bluebeam"
+     ]
+    },
+    {
+     "rank": 6,
+     "title": "Interior Design Junior Designer",
+     "company": "Interior Concepts, Inc.",
+     "location": "Annapolis, MD",
+     "level": null,
+     "snippet": "Join Our Award-Winning Interior Design Team Are you a degreed Interior Designer passionate about creating stunning spaces? Our Annapolis-based firm is looking for talented individuals like you to join our team. If you have 2-5 years of experience and are proficient in AutoCAD, along with hand-drafting skills, we want to hear from you. Key Qualifications Proficient in AutoCAD and hand",
+     "why": null,
+     "missing": []
+    },
+    {
+     "rank": 7,
+     "title": "Computer Aided Design Drafter",
+     "company": "Stone Central New York",
+     "location": "Syracuse, NY",
+     "level": null,
+     "snippet": "Syracuse based custom countertop fabrication company seeks an attentive and determined CAD Drafter/Project Manager. This position works directly with all other departments to plan, design, and manage the custom projects to be ready for fabrication. Responsibilities:Translate template drawings, dimensions, and order information provided by retailers and customers into fabrication ready drawings using AutoCAD (2D)Communicate with departments internally to ensure all",
+     "why": null,
+     "missing": []
+    },
+    {
+     "rank": 8,
+     "title": "Summer Intern - Software Developer",
+     "company": "S&P Global",
+     "location": "New York, NY",
+     "level": null,
+     "snippet": "About The Role Grade Level (for internal use): 05 The Team Interns would be working with our Content and Pricing platforms teams who are responsible for developing core technology solutions. Work closely with Product organization in a fast-paced environment. Collaborate with multiple internal and shared services teams. Responsibilities And Impact Impact: Interns work on meaningful work assignments that meet a",
+     "why": null,
+     "missing": []
+    },
+    {
+     "rank": 9,
+     "title": "Robotics Software Engineering Internship (UNPAID)",
+     "company": "Robotics Startup",
+     "location": "Daytona Beach, FL",
+     "level": null,
+     "snippet": "Embark on an exciting startup journey and immerse yourself in the world of unmanned and autonomous systems! We are thrilled to offer a Summer Internship opportunity for aspiring engineers passionate about pushing the boundaries of design and programming autonomous robots. Join our team as we delve into the thrilling realm of unmanned and autonomous systems, shaping the future of technology.",
+     "why": null,
+     "missing": []
+    },
+    {
+     "rank": 10,
+     "title": "Learning Content Design Intern",
+     "company": "DDI | Development Dimensions International",
+     "location": "United States",
+     "level": "Internship",
+     "snippet": "Description **This is a 12-week internship through the summer months, with the possible opportunity to extend** The Product Development Content–Learning Content Design intern will bring a fresh perspective on design – techniques, processes and technical – to share and work with the Learning Content Design team (learning experience designers, visual experience designers and multimedia designers) while playing a key role",
+     "why": null,
+     "missing": []
+    }
+   ]
+  }
+ }
+]

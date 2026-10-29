@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Resume Job Matcher</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #f2f4f8; --sheet: #ffffff; --ink: #172338; --ink-soft: #5a6479; --rule: #dde2ea;
+    --hl: #ffd43b; --chip-bg: #fff0b3; --chip-ink: #4d3d00; --gap: #d1553f; --focus: #2f62d6;
+    --serif: "Newsreader", Georgia, serif; --sans: "Public Sans", system-ui, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #0f1217; --sheet: #181c24; --ink: #e8ebf1; --ink-soft: #9ea7b8; --rule: #283040;
+      --chip-bg: rgba(255, 212, 59, .13); --chip-ink: #f6dc86; --gap: #ff8f78; --focus: #7ea2f2;
+    }
+  }
+  * { box-sizing: border-box; }
+  [hidden] { display: none !important; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font: 400 1rem/1.6 var(--sans); }
+  .wrap { max-width: 1160px; margin: 0 auto; padding: 0 20px; }
+  h1, h2, h3 { font-family: var(--serif); font-weight: 600; line-height: 1.15; margin: 0; }
+  p { margin: 0; }
+  :focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+  .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .card { background: var(--sheet); border: 1px solid var(--rule); border-radius: 12px; }
+  .label { font: 600 .82rem/1.4 var(--sans); color: var(--ink-soft); margin-bottom: 6px; }
+
+  /* Skill tags (highlighter) and gap list */
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 0; padding: 0; list-style: none; }
+  .chips li { background: var(--chip-bg); color: var(--chip-ink); font-size: .84rem; font-weight: 500;
+              line-height: 1.4; padding: 3px 9px; border-radius: 5px; }
+  .gap-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 7px; }
+  .gap-list li { position: relative; padding-left: 20px; font-size: .94rem; line-height: 1.5; }
+  .gap-list li::before { content: ""; position: absolute; left: 0; top: .5em; width: 9px; height: 9px;
+                         border: 2px solid var(--gap); border-radius: 50%; }
+
+  /* Hero */
+  .hero { display: grid; gap: 40px; padding: 48px 0 16px; align-items: center; }
+  @media (min-width: 960px) { .hero { grid-template-columns: minmax(0, 1fr) 440px; gap: 72px; padding: 72px 0 32px; } }
+  .hero h1 { font-size: clamp(2.2rem, 5vw, 3.4rem); letter-spacing: -.015em; }
+  .lead { margin: 16px 0 28px; font-size: 1.15rem; color: var(--ink-soft); max-width: 560px; }
+  .upload { padding: 20px; }
+  .drop { display: block; border: 2px dashed var(--rule); border-radius: 8px; padding: 26px 20px; text-align: center; cursor: pointer; }
+  .drop:hover, .drop.over { border-color: var(--hl); }
+  .drop:focus-within { outline: 3px solid var(--focus); outline-offset: 2px; }
+  .drop strong { display: block; font-weight: 600; }
+  .drop span { color: var(--ink-soft); font-size: .92rem; }
+  .actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 18px; margin-top: 14px; }
+  .btn { font: 700 1rem var(--sans); background: var(--hl); color: #172338; border: 0; border-radius: 8px; padding: 12px 24px; cursor: pointer; }
+  .btn:hover { filter: brightness(.95); }
+  .btn:disabled { opacity: .6; cursor: progress; }
+  .privacy { font-size: .84rem; color: var(--ink-soft); flex: 1; min-width: 220px; }
+  .samples { margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--rule); font-size: .92rem; color: var(--ink-soft); }
+  #sample-buttons { display: inline-flex; flex-wrap: wrap; gap: 4px 16px; vertical-align: top; }
+  .samples button { font: 600 .92rem var(--sans); color: var(--ink); background: none; border: 0; padding: 0;
+                    text-decoration: underline; text-decoration-color: var(--hl); text-decoration-thickness: 2px;
+                    text-underline-offset: 4px; cursor: pointer; }
+  .samples button:disabled { opacity: .5; cursor: progress; }
+
+  /* Example sheet */
+  .preview { position: relative; display: none; }
+  @media (min-width: 960px) { .preview { display: block; } }
+  .sheet { padding: 24px; box-shadow: 0 22px 44px -28px rgba(8, 16, 32, .55); }
+  .sheet.back { position: absolute; inset: 0; transform: translate(14px, 12px) rotate(2.5deg); opacity: .6; }
+  .sheet.front { position: relative; transform: rotate(-1deg); }
+  .ex-top { padding-bottom: 16px; border-bottom: 1px solid var(--rule); }
+  .ex-match { padding-top: 16px; display: grid; grid-template-columns: auto 1fr; gap: 0 14px; }
+  .ex-match .rank { font-size: 1.7rem; }
+  .ex-match h3 { font-size: 1.2rem; }
+  .ex-match .why { font-size: .92rem; margin-top: 10px; }
+  .ex-match .gap-block { margin-top: 12px; }
+
+  /* Shared match pieces */
+  .rank { font: 600 2rem/1 var(--serif); color: var(--ink-soft); min-width: 26px; }
+  .org { display: flex; flex-wrap: wrap; gap: 4px 14px; margin-top: 6px; font-size: .9rem; color: var(--ink-soft); }
+  .org .company { color: var(--ink); font-weight: 600; }
+  .org .lvl { border: 1px solid var(--rule); border-radius: 4px; padding: 0 6px; }
+
+  /* Status */
+  #status, #error { max-width: 640px; margin: 8px 0 0; }
+  #status { color: var(--ink-soft); }
+  .bar { height: 3px; background: var(--rule); border-radius: 2px; overflow: hidden; margin-top: 10px; }
+  .bar::after { content: ""; display: block; width: 30%; height: 100%; background: var(--hl); animation: slide 1.4s ease-in-out infinite; }
+  @keyframes slide { from { transform: translateX(-100%); } to { transform: translateX(340%); } }
+  #error { padding: 12px 16px; border-left: 3px solid var(--gap); background: var(--sheet); border-radius: 0 8px 8px 0; }
+
+  /* Results */
+  .results { display: grid; gap: 28px; padding: 24px 0 8px; }
+  @media (min-width: 960px) {
+    .results { grid-template-columns: 320px minmax(0, 1fr); gap: 40px; align-items: start; }
+    .profile { position: sticky; top: 24px; }
+  }
+  .profile { padding: 24px; }
+  .profile .role { font: 600 1.5rem/1.2 var(--serif); }
+  .profile .level { display: inline-block; margin-top: 8px; font-size: .85rem; color: var(--ink-soft);
+                    border: 1px solid var(--rule); border-radius: 4px; padding: 0 6px; }
+  .profile .summary { margin-top: 14px; font-size: .95rem; }
+  .profile .chips { margin-top: 8px; }
+  .profile .skills-label { margin-top: 18px; }
+  .matches-head h2 { font-size: 1.7rem; }
+  .matches-head p { margin-top: 6px; color: var(--ink-soft); }
+  .match { padding: 22px 24px; margin-top: 14px; }
+  .match-head { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 0 16px; align-items: start; }
+  .match h3 { font-size: 1.3rem; }
+  .match-body { display: grid; gap: 16px 32px; margin-top: 18px; }
+  @media (min-width: 600px) { .match-body, .match details { margin-left: 42px; } }
+  @media (min-width: 760px) { .match-body { grid-template-columns: 1fr 1fr; } }
+  .match details { margin-top: 16px; padding-top: 12px; border-top: 1px solid var(--rule); font-size: .9rem; color: var(--ink-soft); }
+  summary { cursor: pointer; width: fit-content; }
+  details p { margin-top: 6px; }
+  .more { margin-top: 28px; }
+  .more h2 { font-size: 1.25rem; }
+  .more ol { list-style: none; margin: 12px 0 0; padding: 0 24px; }
+  .more li { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 0 16px; padding: 14px 0; }
+  .more li + li { border-top: 1px solid var(--rule); }
+  .more .rank { font-size: 1.3rem; }
+  .more .t { font-weight: 600; }
+
+  /* How it works + footer */
+  .how { margin-top: 40px; padding: 36px 0 0; border-top: 1px solid var(--rule); }
+  .how h2 { font-size: 1.45rem; }
+  .how ol { margin: 20px 0 0; padding: 0; list-style: none; counter-reset: step; display: grid; gap: 22px 32px; }
+  @media (min-width: 600px) { .how ol { grid-template-columns: repeat(2, 1fr); } }
+  @media (min-width: 960px) { .how ol { grid-template-columns: repeat(4, 1fr); } }
+  .how li { counter-increment: step; }
+  .how li::before { content: counter(step); display: block; font: 600 1.6rem/1 var(--serif); color: var(--ink-soft); margin-bottom: 8px; }
+  .how strong { display: block; margin-bottom: 4px; }
+  .how span { color: var(--ink-soft); font-size: .94rem; }
+  footer { padding: 40px 0 48px; font-size: .85rem; color: var(--ink-soft); }
+
+  @media (prefers-reduced-motion: reduce) { .bar::after { animation: none; width: 100%; opacity: .5; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <div>
+      <h1>Which jobs fit your resume?</h1>
+      <p class="lead">Upload it and get the ten closest matches from 17,145 job postings, each with the reasons it fits and the gaps you'd need to close.</p>
+      <section class="upload card" aria-label="Upload a resume">
+        <form id="form">
+          <label class="drop" id="drop">
+            <input class="sr-only" type="file" id="file" accept=".pdf,.txt">
+            <strong id="drop-title">Drop your resume here, or click to browse</strong>
+            <span id="drop-hint">PDF or .txt, up to 2 MB</span>
+          </label>
+          <div class="actions">
+            <button class="btn" id="submit" type="submit">Find matches</button>
+            <p class="privacy">Your resume is sent to an AI model (gpt-oss via Groq) for analysis. It is not stored.</p>
+          </div>
+        </form>
+        <div class="samples" id="samples" hidden>No resume handy? Try a sample: <span id="sample-buttons"></span></div>
+      </section>
+    </div>
+
+    <div class="preview" aria-hidden="true">
+      <div class="sheet card back"></div>
+      <div class="sheet card front">
+        <div class="ex-top">
+          <p class="label">Example result</p>
+          <ul class="chips"><li>Network administration</li><li>Cisco switching</li><li>End-user support</li><li>Backup and recovery</li></ul>
+        </div>
+        <div class="ex-match">
+          <span class="rank">1</span>
+          <div>
+            <h3>Desktop Support Specialist</h3>
+            <div class="org"><span class="company">Trinity Technology Solutions</span><span>McLean, VA</span><span class="lvl">Mid-Senior level</span></div>
+            <p class="why">Your help desk, hardware troubleshooting and user account experience fit the role's focus on incident resolution and user support.</p>
+            <div class="gap-block">
+              <p class="label">Gaps to close</p>
+              <ul class="gap-list"><li>Azure Active Directory</li><li>Exchange Online</li><li>Intune device management</li></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div id="status" hidden role="status"></div>
+  <div id="error" hidden role="alert"></div>
+  <section id="results" class="results" hidden aria-live="polite"></section>
+
+  <section class="how" aria-labelledby="how-title">
+    <h2 id="how-title">How it works</h2>
+    <ol>
+      <li><strong>Read</strong><span>An LLM turns your resume into a structured profile: role, seniority, skills and domains.</span></li>
+      <li><strong>Search</strong><span>Semantic search finds the 20 closest postings, adjusted so roles match your seniority.</span></li>
+      <li><strong>Rank</strong><span>An LLM reorders those 20 by real fit and keeps the best 10.</span></li>
+      <li><strong>Explain</strong><span>For the top 5, it lists why each fits and which stated requirements you don't yet show.</span></li>
+    </ol>
+  </section>
+
+  <footer>Built with bge-small embeddings, gpt-oss on Groq and FastAPI. Job postings come from a public LinkedIn dataset (2023-24) and are no longer live.</footer>
+</div>
+
+<script>
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c =>
+  ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const reduceMotion = matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+const fileInput = $("#file"), drop = $("#drop");
+function showFile() {
+  const f = fileInput.files[0];
+  $("#drop-title").textContent = f ? f.name : "Drop your resume here, or click to browse";
+  $("#drop-hint").textContent = f ? "Click to choose a different file" : "PDF or .txt, up to 2 MB";
+}
+fileInput.addEventListener("change", showFile);
+["dragenter", "dragover"].forEach(ev => drop.addEventListener(ev, e => { e.preventDefault(); drop.classList.add("over"); }));
+["dragleave", "drop"].forEach(ev => drop.addEventListener(ev, e => { e.preventDefault(); drop.classList.remove("over"); }));
+drop.addEventListener("drop", e => { if (e.dataTransfer.files.length) { fileInput.files = e.dataTransfer.files; showFile(); } });
+
+function setBusy(on) {
+  $("#submit").disabled = on;
+  document.querySelectorAll(".samples button").forEach(b => b.disabled = on);
+  $("#status").hidden = !on;
+  $("#status").innerHTML = on ? 'Finding matches. This usually takes 5 to 15 seconds.<div class="bar"></div>' : "";
+}
+function showError(msg) { $("#error").textContent = msg; $("#error").hidden = false; }
+
+async function run(request) {
+  $("#error").hidden = true;
+  $("#results").hidden = true;
+  setBusy(true);
+  $("#status").scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth", block: "center" });
+  try {
+    const res = await request();
+    const body = await res.json().catch(() => ({}));
+    if (!res.ok) throw new Error(body.detail || "The server returned an error. Try again in a moment.");
+    render(body);
+  } catch (e) {
+    showError(e.message === "Failed to fetch" ? "Could not reach the server. Check your connection and try again." : e.message);
+  } finally {
+    setBusy(false);
+  }
+}
+
+function org(m) {
+  return `<div class="org">${m.company ? `<span class="company">${esc(m.company)}</span>` : ""}${m.location ? `<span>${esc(m.location)}</span>` : ""}${m.level ? `<span class="lvl">${esc(m.level)}</span>` : ""}</div>`;
+}
+
+function render({ profile: p, matches }) {
+  const top = matches.filter(m => m.why), rest = matches.filter(m => !m.why);
+  $("#results").innerHTML = `
+    <aside class="profile card">
+      <p class="label">Your profile</p>
+      <div class="role">${esc(p.title)}</div>
+      <span class="level">${esc(p.seniority)} level</span>
+      <p class="summary">${esc(p.summary)}</p>
+      <p class="label skills-label">Skills found</p>
+      <ul class="chips">${p.skills.map(s => `<li>${esc(s)}</li>`).join("")}</ul>
+    </aside>
+    <div class="matches">
+      <div class="matches-head">
+        <h2>Best matches</h2>
+        <p>Ranked by fit to your profile. Gaps are requirements from each posting that your resume doesn't show yet.</p>
+      </div>
+      ${top.map(m => `
+        <article class="match card">
+          <div class="match-head">
+            <span class="rank">${m.rank}</span>
+            <div><h3>${esc(m.title)}</h3>${org(m)}</div>
+          </div>
+          <div class="match-body">
+            <div><p class="label">Why it fits</p><p>${esc(m.why)}</p></div>
+            ${m.missing.length ? `<div><p class="label">Gaps to close</p>
+              <ul class="gap-list">${m.missing.map(g => `<li>${esc(g)}</li>`).join("")}</ul></div>` : ""}
+          </div>
+          <details><summary>Posting excerpt</summary><p>${esc(m.snippet)}...</p></details>
+        </article>`).join("")}
+      ${rest.length ? `<div class="more"><h2>Also worth a look</h2>
+        <ol class="card">${rest.map(m => `<li><span class="rank">${m.rank}</span><div><div class="t">${esc(m.title)}</div>${org(m)}</div></li>`).join("")}</ol></div>` : ""}
+    </div>`;
+  $("#results").hidden = false;
+  $("#results").scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth", block: "start" });
+}
+
+$("#form").addEventListener("submit", e => {
+  e.preventDefault();
+  const f = fileInput.files[0];
+  if (!f) return showError("Choose a resume file first, or try one of the samples.");
+  const fd = new FormData();
+  fd.append("file", f);
+  run(() => fetch("/api/match", { method: "POST", body: fd }));
+});
+
+fetch("/api/samples").then(r => r.json()).then(list => {
+  if (!list.length) return;
+  $("#samples").hidden = false;
+  list.forEach(s => {
+    const b = document.createElement("button");
+    b.type = "button";
+    b.textContent = s.label;
+    b.onclick = () => run(() => fetch(`/api/samples/${s.id}`));
+    $("#sample-buttons").append(b);
+  });
+}).catch(() => {});
+</script>
+</body>
+</html>
